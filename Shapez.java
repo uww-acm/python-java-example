@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.lang.Math;
 
 public class Shapez{
-	public static void main(String[] args){
+	public static void main(String[] args){ //should use Scanner, File I/O, while/for loops
 		
 	}
 	
