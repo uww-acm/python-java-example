@@ -92,6 +92,6 @@ class Circle{
 	}
 	
 	boolean contains(Point p){
-		return (center.distance(p) <= radius);
+		return (Point.distance(center, p) <= radius);
 	}
 }
