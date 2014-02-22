@@ -33,7 +33,7 @@ class Point{
 
 class Rectangle{
 	Point upperLeft;
-	double width, height;
+	private double width, height;
 	
 	public Rectangle(){
 		upperLeft = new Point();
@@ -42,8 +42,24 @@ class Rectangle{
 	
 	public Rectangle(Point upperLeft, double width, double height){
 		this.upperLeft = upperLeft;
-		this.width = width;
-		this.height = height;
+		this.width = Math.abs(width);
+		this.height = Math.abs(height);
+	}
+	
+	void setWidth(double width){
+		this.width = Math.abs(width);
+	}
+	
+	double getWidth(){
+		return width;
+	}
+	
+	void setHeight(double height){
+		this.height = Math.abs(height);
+	}
+	
+	double getHeight(){
+		return height;
 	}
 	
 	double area(){
@@ -71,7 +87,7 @@ class Rectangle{
 
 class Circle{
 	Point center;
-	double radius;
+	private double radius;
 	
 	public Circle(){
 		center = new Point(0, 0);
@@ -80,7 +96,15 @@ class Circle{
 	
 	public Circle(Point center, double radius){
 		this.center = center;
-		this.radius = radius;
+		this.radius = Math.abs(radius);
+	}
+	
+	void setRadius(double radius){
+		this.radius = Math.abs(radius);
+	}
+	
+	double getRadius(){
+		return radius;
 	}
 	
 	double area(){
