@@ -8,7 +8,7 @@ class Point:
 	def __str__(self):
 		return "(" + str(self.x) + ", " + str(self.y) + ")"
 	
-	def distance(self, p1, p2):
+	def distance(p1, p2):
 		if isinstance(p1, Point) and isinstance(p2, Point):
 			return sqrt((p2.x-p1.x)**2+(p2.y-p1.y)**2)
 			
